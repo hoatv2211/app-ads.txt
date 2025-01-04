@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            padding: 20px;
+        }
+        h2 {
+            margin-top: 20px;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.9em;
+            margin-top: 20px;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Privacy Policy</h1>
+    </header>
+    <div class="container">
+        <p><strong>Last Updated: January 4, 2025</strong></p>
+        
+        <h2>1. Introduction</h2>
+        <p>Welcome to <strong>[Trial Biker:Mad Wheels]</strong>. This Privacy Policy explains how we collect, use, and protect your information when you use our app.</p>
+        
+        <h2>2. Information We Collect</h2>
+        <p>We may collect and process the following information:</p>
+        <ul>
+            <li><strong>Personal Information:</strong> Name, email address, phone number (if provided).</li>
+            <li><strong>Device Information:</strong> Device model, operating system, unique device identifiers.</li>
+            <li><strong>Usage Data:</strong> Information on how you interact with our app.</li>
+            <li><strong>Location Data:</strong> If you grant permission, we may collect your location data.</li>
+        </ul>
+
+        <h2>3. How We Use Your Information</h2>
+        <p>We use the collected data for the following purposes:</p>
+        <ul>
+            <li>To provide and maintain our services.</li>
+            <li>To improve user experience.</li>
+            <li>To provide customer support.</li>
+            <li>To comply with legal obligations.</li>
+        </ul>
+
+        <h2>4. Data Sharing and Disclosure</h2>
+        <p>We do not sell or share your personal information with third parties, except in the following situations:</p>
+        <ul>
+            <li>To comply with a legal obligation.</li>
+            <li>To protect our rights or property.</li>
+            <li>With your explicit consent.</li>
+        </ul>
+
+        <h2>5. Data Security</h2>
+        <p>We implement security measures to protect your information from unauthorized access or disclosure.</p>
+
+        <h2>6. Children's Privacy</h2>
+        <p>Our app is not directed at children under the age of 13. We do not knowingly collect personal data from children.</p>
+
+        <h2>7. Your Rights</h2>
+        <p>You have the right to access, update, or delete your personal information. Please contact us if you wish to exercise these rights.</p>
+
+        <h2>8. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+
+        <h2>9. Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy, please contact us:</p>
+        <p><strong>Email:</strong> <a href="mailto:hoatv.mad@gmail.com">hoatv.mad@gmail.com</a></p>
+    </div>
+    <footer>
+        &copy; 2025 [OneMAD]. All Rights Reserved.
+    </footer>
+</body>
+</html>
