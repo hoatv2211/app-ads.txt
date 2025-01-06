@@ -1,4 +1,5 @@
 📑 Privacy Policy
+
 Effective Date:
 Last Updated: 07/01/2025
 
