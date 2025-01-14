@@ -1,6 +1,8 @@
 📑 Privacy Policy
-
 Last Updated: 07/01/2025
+
+Trial Biker:Mad Wheels ads:
+google.com, pub-1367611331592257, DIRECT, f08c47fec0942fa0
 
 📖 Introduction
 Welcome to OneMAD!
