@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{APP_NAME}} Privacy Policy | MADONE Studio</title>
+  <meta name="description" content="Privacy Policy for {{APP_NAME}} by MADONE Studio.">
+  <style>
+    :root {
+      --brand-ink: #0c1f44;
+      --brand-surface: #fafaf4;
+      --brand-card: #ffffff;
+      --brand-line: #d7d9d0;
+      --brand-primary: #0c1f44;
+      --brand-primary-strong: #091734;
+      --brand-accent: #f7b21c;
+      --brand-muted: #4b5563;
+      --brand-max: 920px;
+      --shadow-soft: 0 12px 30px rgba(15, 23, 42, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--brand-ink);
+      background:
+        radial-gradient(circle at 100% 0%, rgba(247, 178, 28, 0.22), transparent 38%),
+        radial-gradient(circle at 0% 100%, rgba(12, 31, 68, 0.12), transparent 40%),
+        var(--brand-surface);
+      line-height: 1.65;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(6px);
+      background: rgba(255, 255, 255, 0.9);
+      border-bottom: 1px solid rgba(219, 226, 234, 0.8);
+    }
+
+    .header-inner {
+      max-width: var(--brand-max);
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--brand-ink);
+    }
+
+    .brand-mark {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      border: 1px solid rgba(12, 31, 68, 0.1);
+      background: #fff;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      box-shadow: 0 6px 14px rgba(12, 31, 68, 0.18);
+      flex-shrink: 0;
+    }
+
+    .brand-mark img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .brand-mark.fallback {
+      background: linear-gradient(145deg, var(--brand-primary), var(--brand-accent));
+      border-color: transparent;
+    }
+
+    .brand-mark.fallback::after {
+      content: "MAD";
+      color: #fff;
+      font-size: 0.74rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+    }
+
+    .brand-text {
+      display: grid;
+      gap: 1px;
+    }
+
+    .brand-title {
+      font-size: 0.96rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .brand-subtitle {
+      font-size: 0.76rem;
+      color: var(--brand-muted);
+      line-height: 1.2;
+    }
+
+    .header-tag {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid var(--brand-line);
+      color: var(--brand-primary-strong);
+      background: #fffdf5;
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 0.77rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    main {
+      max-width: var(--brand-max);
+      margin: 28px auto;
+      padding: 0 20px 40px;
+      animation: reveal 420ms ease-out;
+    }
+
+    @keyframes reveal {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero {
+      background: linear-gradient(180deg, #ffffff, #f9fbff);
+      border: 1px solid var(--brand-line);
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: var(--shadow-soft);
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      line-height: 1.2;
+      font-size: clamp(1.5rem, 2.6vw, 2.1rem);
+      letter-spacing: -0.02em;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .meta span {
+      border: 1px solid var(--brand-line);
+      border-radius: 10px;
+      padding: 7px 10px;
+      font-size: 0.82rem;
+      background: #fff;
+      color: var(--brand-muted);
+    }
+
+    .policy {
+      background: var(--brand-card);
+      border: 1px solid var(--brand-line);
+      border-radius: 18px;
+      padding: 22px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .policy section + section {
+      margin-top: 18px;
+      padding-top: 14px;
+      border-top: 1px dashed var(--brand-line);
+    }
+
+    h2 {
+      margin: 0 0 8px;
+      line-height: 1.3;
+      color: var(--brand-primary-strong);
+      font-size: 1.1rem;
+    }
+
+    p, li {
+      font-size: 0.98rem;
+      margin: 0;
+    }
+
+    ul { margin: 8px 0 0; padding-left: 18px; }
+    li + li { margin-top: 6px; }
+
+    a {
+      color: var(--brand-primary);
+      text-decoration-thickness: 1.5px;
+      text-underline-offset: 2px;
+    }
+
+    .contact-box {
+      margin-top: 10px;
+      border-radius: 12px;
+      border: 1px solid #f2db9a;
+      background: #fff9e8;
+      padding: 12px;
+    }
+
+    .site-footer {
+      max-width: var(--brand-max);
+      margin: 0 auto 28px;
+      padding: 0 20px;
+      color: var(--brand-muted);
+      font-size: 0.85rem;
+      text-align: center;
+    }
+
+    @media (max-width: 720px) {
+      .header-inner { padding: 12px 14px; }
+      main { margin-top: 16px; padding: 0 14px 30px; }
+      .hero, .policy { border-radius: 14px; padding: 16px; }
+      .header-tag { display: none; }
+      .brand-subtitle { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="{{COMPANY_WEBSITE_OR_HASH}}" aria-label="MADONE Studio home">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="{{BRAND_LOGO_URL}}" alt="{{BRAND_LOGO_ALT}}" onerror="this.style.display='none';this.parentElement.classList.add('fallback');">
+        </span>
+        <span class="brand-text">
+          <span class="brand-title">MADONE Studio</span>
+          <span class="brand-subtitle">Mobile Game Development</span>
+        </span>
+      </a>
+      <span class="header-tag">Privacy and Data Transparency</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>{{APP_NAME}} Privacy Policy</h1>
+      <p>This Privacy Policy explains how {{COMPANY_NAME}} collects, uses, and protects information when you use {{APP_NAME}}.</p>
+      <div class="meta" role="list" aria-label="Policy metadata">
+        <span role="listitem">Effective date: {{EFFECTIVE_DATE}}</span>
+        <span role="listitem">Last updated: {{LAST_UPDATED_DATE}}</span>
+        <span role="listitem">Package: {{PACKAGE_NAME}}</span>
+      </div>
+    </section>
+
+    <article class="policy" aria-label="Privacy policy content">
+      <section id="introduction">
+        <h2>1. Introduction</h2>
+        <p>{{INTRODUCTION_TEXT}}</p>
+      </section>
+
+      <section id="data-collected">
+        <h2>2. Information We Collect</h2>
+        <p>{{DATA_COLLECTION_OVERVIEW}}</p>
+        <ul>
+          <li>{{DATA_POINT_1}}</li>
+          <li>{{DATA_POINT_2}}</li>
+          <li>{{DATA_POINT_3}}</li>
+        </ul>
+      </section>
+
+      <section id="data-use">
+        <h2>3. How We Use Information</h2>
+        <p>{{DATA_USE_TEXT}}</p>
+      </section>
+
+      <section id="third-party">
+        <h2>4. Third-Party Services and Sharing</h2>
+        <p>{{THIRD_PARTY_TEXT}}</p>
+      </section>
+
+      <section id="retention">
+        <h2>5. Data Retention</h2>
+        <p>{{RETENTION_TEXT}}</p>
+      </section>
+
+      <section id="security">
+        <h2>6. Security</h2>
+        <p>{{SECURITY_TEXT}}</p>
+      </section>
+
+      <section id="children">
+        <h2>7. Children's Privacy</h2>
+        <p>{{CHILDREN_TEXT}}</p>
+      </section>
+
+      <section id="rights">
+        <h2>8. Your Rights and Choices</h2>
+        <p>{{RIGHTS_TEXT}}</p>
+      </section>
+
+      <section id="changes">
+        <h2>9. Changes to This Policy</h2>
+        <p>{{CHANGES_TEXT}}</p>
+      </section>
+
+      <section id="contact">
+        <h2>10. Contact Us</h2>
+        <div class="contact-box">
+          <p><strong>Company:</strong> {{COMPANY_NAME}}</p>
+          <p><strong>Email:</strong> <a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a></p>
+          <p><strong>Website:</strong> <a href="{{COMPANY_WEBSITE}}">{{COMPANY_WEBSITE}}</a></p>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; {{CURRENT_YEAR}} MADONE Studio. All rights reserved.</p>
+  </footer>
+</body>
+</html>

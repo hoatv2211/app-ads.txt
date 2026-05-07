@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Building City Privacy Policy | MADONE</title>
+  <meta name="description" content="Privacy Policy for Building City by MADONE.">
+  <style>
+    :root {
+      --brand-ink: #0c1f44;
+      --brand-surface: #fafaf4;
+      --brand-card: #ffffff;
+      --brand-line: #d7d9d0;
+      --brand-primary: #0c1f44;
+      --brand-primary-strong: #091734;
+      --brand-accent: #f7b21c;
+      --brand-muted: #4b5563;
+      --brand-max: 920px;
+      --shadow-soft: 0 12px 30px rgba(15, 23, 42, 0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--brand-ink);
+      background:
+        radial-gradient(circle at 100% 0%, rgba(247, 178, 28, 0.22), transparent 38%),
+        radial-gradient(circle at 0% 100%, rgba(12, 31, 68, 0.12), transparent 40%),
+        var(--brand-surface);
+      line-height: 1.65;
+    }
+    .site-header {
+      position: sticky; top: 0; z-index: 10;
+      backdrop-filter: blur(6px);
+      background: rgba(255,255,255,0.9);
+      border-bottom: 1px solid rgba(219,226,234,0.8);
+    }
+    .header-inner {
+      max-width: var(--brand-max); margin: 0 auto;
+      padding: 14px 20px; display: flex;
+      align-items: center; justify-content: space-between; gap: 12px;
+    }
+    .brand {
+      display: inline-flex; align-items: center; gap: 10px;
+      text-decoration: none; color: var(--brand-ink);
+    }
+    .brand-mark {
+      width: 44px; height: 44px; border-radius: 10px;
+      border: 1px solid rgba(12,31,68,0.1); background: #fff;
+      display: grid; place-items: center; overflow: hidden;
+      box-shadow: 0 6px 14px rgba(12,31,68,0.18); flex-shrink: 0;
+    }
+    .brand-mark img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .brand-mark.fallback {
+      background: linear-gradient(145deg, var(--brand-primary), var(--brand-accent));
+      border-color: transparent;
+    }
+    .brand-mark.fallback::after {
+      content: "MAD"; color: #fff;
+      font-size: 0.74rem; font-weight: 800; letter-spacing: 0.06em;
+    }
+    .brand-text { display: grid; gap: 1px; }
+    .brand-title { font-size: 0.96rem; font-weight: 700; line-height: 1.2; }
+    .brand-subtitle { font-size: 0.76rem; color: var(--brand-muted); line-height: 1.2; }
+    .header-tag {
+      display: inline-flex; align-items: center;
+      border: 1px solid var(--brand-line); color: var(--brand-primary-strong);
+      background: #fffdf5; border-radius: 999px;
+      padding: 6px 10px; font-size: 0.77rem; font-weight: 600; white-space: nowrap;
+    }
+    main {
+      max-width: var(--brand-max); margin: 28px auto;
+      padding: 0 20px 40px; animation: reveal 420ms ease-out;
+    }
+    @keyframes reveal {
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .hero {
+      background: linear-gradient(180deg, #ffffff, #f9fbff);
+      border: 1px solid var(--brand-line); border-radius: 18px;
+      padding: 24px; box-shadow: var(--shadow-soft); margin-bottom: 18px;
+    }
+    h1 {
+      margin: 0 0 8px; line-height: 1.2;
+      font-size: clamp(1.5rem, 2.6vw, 2.1rem); letter-spacing: -0.02em;
+    }
+    .meta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+    .meta span {
+      border: 1px solid var(--brand-line); border-radius: 10px;
+      padding: 7px 10px; font-size: 0.82rem; background: #fff; color: var(--brand-muted);
+    }
+    .policy {
+      background: var(--brand-card); border: 1px solid var(--brand-line);
+      border-radius: 18px; padding: 22px; box-shadow: var(--shadow-soft);
+    }
+    .policy section + section {
+      margin-top: 18px; padding-top: 14px; border-top: 1px dashed var(--brand-line);
+    }
+    h2 { margin: 0 0 8px; line-height: 1.3; color: var(--brand-primary-strong); font-size: 1.1rem; }
+    h3 { margin: 14px 0 6px; font-size: 1rem; color: var(--brand-ink); }
+    p { margin: 0; font-size: 0.98rem; }
+    p + p { margin-top: 8px; }
+    ul { margin: 8px 0 0; padding-left: 18px; }
+    li { font-size: 0.98rem; }
+    li + li { margin-top: 6px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 0.95rem; }
+    th, td { border: 1px solid var(--brand-line); padding: 8px 10px; text-align: left; vertical-align: top; }
+    th { background: #fffdf5; font-weight: 600; }
+    code {
+      font-family: "Consolas", "Courier New", monospace;
+      background: #f1f3f5; border-radius: 4px; padding: 1px 5px; font-size: 0.9em;
+    }
+    a {
+      color: var(--brand-primary); text-decoration-thickness: 1.5px;
+      text-underline-offset: 2px; word-break: break-all;
+    }
+    .contact-box {
+      margin-top: 10px; border-radius: 12px;
+      border: 1px solid #f2db9a; background: #fff9e8;
+      padding: 12px; display: grid; gap: 6px;
+    }
+    .site-footer {
+      max-width: var(--brand-max); margin: 0 auto 28px;
+      padding: 0 20px; color: var(--brand-muted);
+      font-size: 0.85rem; text-align: center;
+    }
+    @media (max-width: 720px) {
+      .header-inner { padding: 12px 14px; }
+      main { margin-top: 16px; padding: 0 14px 30px; }
+      .hero, .policy { border-radius: 14px; padding: 16px; }
+      .header-tag, .brand-subtitle { display: none; }
+      table, thead, tbody, th, td, tr { display: block; }
+      thead { display: none; }
+      tr { margin-bottom: 8px; border: 1px solid var(--brand-line); border-radius: 8px; overflow: hidden; }
+      td { border: none; border-bottom: 1px solid var(--brand-line); }
+      td:last-child { border-bottom: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="https://github.com/hoatv2211" target="_blank" rel="noopener noreferrer" aria-label="MADONE home">
+        <span class="brand-mark" aria-hidden="true">
+          <img
+            src="./.github/templates/assets/madone-logo.png"
+            alt="MADONE logo"
+            onerror="this.style.display='none';this.parentElement.classList.add('fallback');"
+          >
+        </span>
+        <span class="brand-text">
+          <span class="brand-title">MADONE</span>
+          <span class="brand-subtitle">Mobile Game Development</span>
+        </span>
+      </a>
+      <span class="header-tag">Privacy and Data Transparency</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Building City &mdash; Privacy Policy</h1>
+      <p>This Privacy Policy explains how MADONE handles information when you use <strong>Building City</strong>.</p>
+      <div class="meta" role="list" aria-label="Policy metadata">
+        <span role="listitem">Effective date: May 7, 2026</span>
+        <span role="listitem">Last updated: May 7, 2026</span>
+        <span role="listitem">Package: com.madone.buildingcity</span>
+        <span role="listitem">Platform: Android (Google Play)</span>
+      </div>
+    </section>
+
+    <article class="policy" aria-label="Privacy policy content">
+
+      <section id="overview">
+        <h2>1. Overview</h2>
+        <p>MADONE (&ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;) built <strong>Building City</strong> as a free mobile city-building game. We are committed to protecting your privacy. Building City does <strong>not</strong> collect, store, or transmit personally identifiable information (PII) to MADONE servers. All game progress is stored locally on your device.</p>
+      </section>
+
+      <section id="no-collection">
+        <h2>2. Information We Do Not Collect</h2>
+        <p>Building City does not directly collect the following for MADONE servers:</p>
+        <ul>
+          <li>Name, email address, or phone number</li>
+          <li>Precise or approximate location data</li>
+          <li>Device phone number or IMEI</li>
+          <li>Contacts or account lists from your device</li>
+          <li>Photos, media, or files from your device</li>
+        </ul>
+      </section>
+
+      <section id="third-party">
+        <h2>3. Third-Party Services</h2>
+        <p>Building City integrates third-party SDKs that may collect technical or usage data automatically under their own privacy policies.</p>
+
+        <h3>3.1 Google AdMob (Advertising)</h3>
+        <p>We use Google AdMob (Publisher ID: <code>ca-app-pub-2218023806663419</code>) to display in-game advertisements. AdMob may collect:</p>
+        <ul>
+          <li>Advertising ID (Google GAID) for ad personalization and fraud prevention</li>
+          <li>IP address for approximate location determination and ad delivery</li>
+          <li>Device information such as model, OS version, and screen size</li>
+          <li>Ad interaction data such as impressions, clicks, and engagement duration</li>
+        </ul>
+        <p>To opt out of personalized ads on Android: <strong>Settings &rarr; Google &rarr; Ads &rarr; Opt out of Ads Personalization</strong></p>
+        <p>Google Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></p>
+
+        <h3>3.2 Unity Analytics</h3>
+        <p>Building City is built with Unity Engine, which may process analytics and diagnostics data including:</p>
+        <ul>
+          <li>Session information such as play sessions and duration</li>
+          <li>Device information such as model, OS version, and hardware profile</li>
+          <li>Gameplay events (for example: level progress, building placement)</li>
+          <li>Crash and stability diagnostics</li>
+        </ul>
+        <p>Unity Privacy Policy: <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">https://unity.com/legal/privacy-policy</a></p>
+
+        <h3>3.3 Google Play Billing (In-App Purchases)</h3>
+        <p>If you make in-app purchases, transactions are processed by Google Play Billing. Payment details are handled entirely by Google &mdash; MADONE never receives or stores your payment information.</p>
+        <p>Google Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></p>
+      </section>
+
+      <section id="local-storage">
+        <h2>4. Local Data Storage</h2>
+        <p>All game progress, settings, and in-game currency are stored <strong>locally on your device</strong> using Android SharedPreferences or local files.</p>
+        <ul>
+          <li>This data is <strong>not uploaded</strong> to any external server.</li>
+          <li>This data may be lost if you uninstall the app or clear app data.</li>
+          <li>This data is <strong>not shared</strong> with third parties by MADONE.</li>
+        </ul>
+      </section>
+
+      <section id="permissions">
+        <h2>5. Android Permissions</h2>
+        <p>Building City requests only the following permissions:</p>
+        <table aria-label="Android permissions">
+          <thead>
+            <tr><th>Permission</th><th>Purpose</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>INTERNET</code></td>
+              <td>Load advertisements and perform connectivity checks</td>
+            </tr>
+            <tr>
+              <td><code>ACCESS_NETWORK_STATE</code></td>
+              <td>Detect network availability before loading ads</td>
+            </tr>
+            <tr>
+              <td><code>ACCESS_WIFI_STATE</code></td>
+              <td>Detect Wi-Fi connection status</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="margin-top:10px;">The app does <strong>not</strong> request sensitive permissions such as camera, microphone, contacts, location, or phone state.</p>
+      </section>
+
+      <section id="children">
+        <h2>6. Children&rsquo;s Privacy</h2>
+        <p>Building City does not knowingly collect personal information from children under the age of 13 through MADONE servers. The game may display advertisements through Google AdMob.</p>
+        <p>If you are a parent or guardian and believe your child has provided personal information, please contact us at <a href="mailto:madonestudiogame@gmail.com">madonestudiogame@gmail.com</a> so we can take appropriate action.</p>
+      </section>
+
+      <section id="retention">
+        <h2>7. Data Retention</h2>
+        <p>Because MADONE does not maintain server-side personal data for Building City, no direct data retention period applies to MADONE records. Data processed by third-party providers (AdMob, Unity) is subject to those providers&rsquo; own retention and deletion policies.</p>
+      </section>
+
+      <section id="rights">
+        <h2>8. Your Rights (GDPR / CCPA)</h2>
+        <p>Depending on your jurisdiction, you may have the right to access, delete, opt out of, or obtain a copy of your personal data. To exercise rights regarding third-party data:</p>
+        <ul>
+          <li>Google: <a href="https://myaccount.google.com/data-and-privacy" target="_blank" rel="noopener noreferrer">https://myaccount.google.com/data-and-privacy</a></li>
+          <li>Unity: <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">https://unity.com/legal/privacy-policy</a></li>
+        </ul>
+        <p>For direct MADONE support: <a href="mailto:madonestudiogame@gmail.com">madonestudiogame@gmail.com</a></p>
+      </section>
+
+      <section id="links">
+        <h2>9. Third-Party Links</h2>
+        <p>Advertisements may link to third-party websites or applications. MADONE is not responsible for the privacy practices of those services. We encourage you to review their privacy policies before providing any personal information.</p>
+      </section>
+
+      <section id="changes">
+        <h2>10. Changes to This Policy</h2>
+        <p>This Privacy Policy may be updated from time to time. Changes will be reflected by revising the <strong>Effective Date</strong> shown at the top of this document. We encourage you to review this page periodically.</p>
+      </section>
+
+      <section id="contact">
+        <h2>11. Contact Us</h2>
+        <div class="contact-box">
+          <p><strong>Company:</strong> MADONE</p>
+          <p><strong>Email:</strong> <a href="mailto:madonestudiogame@gmail.com">madonestudiogame@gmail.com</a></p>
+          <p><strong>Website:</strong> <a href="https://github.com/hoatv2211" target="_blank" rel="noopener noreferrer">https://github.com/hoatv2211</a></p>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 MADONE. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
